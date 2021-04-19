@@ -7,6 +7,7 @@ import (
 )
 
 func main(){
+	sumi := 0
 	var start, end string
 	fmt.Scan(&start)
 	fmt.Scan(&end)
@@ -17,8 +18,10 @@ func main(){
 	}
 	for i :=s; i<=f; i++{
 		if i % 2==1{
-			fmt.Println(i)
+		sumi = sumi+i
 		}
 	}
+	fmt.Println(sumi)
+
 }
 
